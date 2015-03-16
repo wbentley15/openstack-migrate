@@ -1,0 +1,272 @@
+---
+rules:
+  rule1:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 4000 
+    port_range_max: 4000
+    remote_ip_prefix: 0.0.0.0/0
+    group: bvmailer
+  rule2:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 8888
+    port_range_max: 8888
+    remote_ip_prefix: 0.0.0.0/0
+    group: cassandra
+  rule3:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 9889
+    port_range_max: 9889
+    remote_ip_prefix: 0.0.0.0/0
+    group: cassandra
+  rule4:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 8080
+    port_range_max: 8080
+    remote_ip_prefix: 0.0.0.0/0
+    group: cassandra
+  rule5:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: udp
+    port_range_min: 54328
+    port_range_max: 54328
+    remote_ip_prefix: 0.0.0.0/0
+    group: elasticsearch
+  rule6:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 9200
+    port_range_max: 9399
+    remote_ip_prefix: 0.0.0.0/0
+    group: elasticsearch
+  rule7:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 11211
+    port_range_max: 11211
+    remote_ip_prefix: 0.0.0.0/0
+    group: memcached
+  rule8:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 22
+    port_range_max: 22
+    remote_ip_prefix: 0.0.0.0/0
+    group: memcached
+  rule9:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 3389
+    port_range_max: 3389
+    remote_ip_prefix: 0.0.0.0/0
+    group: memcached
+  rule10:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 27017
+    port_range_max: 27017
+    remote_ip_prefix: 0.0.0.0/0
+    group: mongo
+  rule11:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 3306
+    port_range_max: 3306
+    remote_ip_prefix: 0.0.0.0/0
+    group: mysql
+  rule12:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 5432
+    port_range_max: 5432
+    remote_ip_prefix: 0.0.0.0/0
+    group: postgresql
+  rule13:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 8888
+    port_range_max: 8888
+    remote_ip_prefix: 0.0.0.0/0
+    group: proxy
+  rule14:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 6379
+    port_range_max: 6379
+    remote_ip_prefix: 0.0.0.0/0
+    group: redis
+  rule15:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 26379
+    port_range_max: 26379
+    remote_ip_prefix: 0.0.0.0/0
+    group: redis
+  rule16:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 22
+    port_range_max: 22
+    remote_ip_prefix: 54.227.51.210/32
+    group: rjmetric
+  rule17:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 22
+    port_range_max: 22
+    remote_ip_prefix: 54.88.76.97/32
+    group: rjmetric
+  rule18:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 22
+    port_range_max: 22
+    remote_ip_prefix: 67.227.138.157/32
+    group: rjmetric
+  rule19:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 22
+    port_range_max: 22
+    remote_ip_prefix: 54.225.124.147/32
+    group: rjmetric
+  rule20:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 514
+    port_range_max: 514
+    remote_ip_prefix: 0.0.0.0/0
+    group: syslog
+  rule21:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: udp
+    port_range_min: 514
+    port_range_max: 514
+    remote_ip_prefix: 0.0.0.0/0
+    group: syslog
+  rule22:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 22
+    port_range_max: 22
+    remote_ip_prefix: 208.22.99.0/24
+    group: tlo
+  rule23:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 443
+    port_range_max: 443
+    remote_ip_prefix: 0.0.0.0/0
+    group: web
+  rule24:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 80
+    port_range_max: 80
+    remote_ip_prefix: 0.0.0.0/0
+    group: web
+  rule25:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 8080
+    port_range_max: 8080
+    remote_ip_prefix: 0.0.0.0/0
+    group: web
+  rule26:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: udp
+    port_range_min: 161
+    port_range_max: 161
+    remote_ip_prefix: 0.0.0.0/0
+    group: default
+  rule27:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 22
+    port_range_max: 22
+    remote_ip_prefix: 172.16.0.0/12
+    group: default
+  rule28:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 22
+    port_range_max: 22
+    remote_ip_prefix: 192.168.0.0/16
+    group: default
+  rule29:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: udp
+    port_range_min: 22
+    port_range_max: 22
+    remote_ip_prefix: 0.0.0.0/0
+    group: default
+  rule30:
+    tenant_id: 1280d9d44fdc407a8dbf08dd3036434b
+    direction: ingress
+    ethertype: IPv4
+    protocol: tcp
+    port_range_min: 22
+    port_range_max: 22
+    remote_ip_prefix: 10.0.0.0/8
+    group: default

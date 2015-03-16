@@ -1,0 +1,7 @@
+---
+- name: Create new security groups
+  command: neutron --os-username={{ OS_USERNAME }} --os-password={{ OS_PASSWORD }} --os-tenant-name={{ OS_TENANT_NAME }} --os-auth-url={{ OS_AUTH_URL }}
+           security-group-rule-create --tenant-id={{ item.value.tenant_id }} --direction={{ item.value.direction }} --ethertype={{ item.value.ethertype }}
+           --protocol={{ item.value.protocol }} --port-range-min={{ item.value.port_range_min }} --port-range-max={{ item.value.port_range_max }} 
+           --remote-ip-prefix={{ item.value.remote_ip_prefix }} {{ item.value.group }}
+  with_dict: rules

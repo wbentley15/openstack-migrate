@@ -1,0 +1,6 @@
+# Here are variables related to the install
+
+OS_USERNAME: admin
+OS_PASSWORD: 3dfcb0c943c1bce0a87a04
+OS_TENANT_NAME: admin
+OS_AUTH_URL: http://172.29.236.10:5000/v2.0

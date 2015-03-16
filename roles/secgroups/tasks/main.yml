@@ -1,0 +1,7 @@
+---
+- name: Create new security groups
+  command: neutron --os-username={{ OS_USERNAME }} --os-password={{ OS_PASSWORD }} --os-tenant-name={{ OS_TENANT_NAME }} --os-auth-url={{ OS_AUTH_URL }}
+           security-group-create --description="{{ item.1 }}" {{ item.0 }}
+  with_together:
+    - secgrp
+    - secgrpdesc
